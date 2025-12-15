@@ -1,0 +1,105 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", Arial, sans-serif;
+}
+
+body {
+    background: #e0ecfa;
+    color: #333;
+}
+
+/* 顶部导航栏 */
+.top-nav {
+    background: #2b7acd;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+/* 主内容区 */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 30px;
+}
+
+/* 分类导航 */
+.category-menu {
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.category-list {
+    list-style: none;
+}
+
+.category-item {
+    margin: 10px 0;
+    position: relative;
+}
+
+.category-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #e6f3ff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.category-title:hover {
+    background: #d9edf7;
+}
+
+.category-arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* 内容展示区 */
+.content-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .category-list {
+        display: block;
+    }
+    
+    .category-item {
+        margin: 5px 0;
+    }
+}
+
